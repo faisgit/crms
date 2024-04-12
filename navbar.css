@@ -1,0 +1,28 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(17, 17, 17);
+    color: white;
+    padding: 13px 4px;
+    position: sticky;
+    top: 0;
+}
+
+
+.nav-head {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+
+
+.nav-list a {
+    text-decoration: none;
+    background-color: white;
+    padding: 5px 6px;
+    border-radius: 3px;
+    margin: 0 3px;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}

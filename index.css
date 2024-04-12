@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #b3b1b1;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+
+    margin-bottom: 70px;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+    background: white;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid rgba(194, 196, 191, 0.788)
+}
+
+tr:nth-child(even) {
+    background-color: #D6EEEE;
+}
+
+#action {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#update,
+#delete {
+    text-decoration: none;
+    color: white;
+}
+
+#update {
+    background: rgb(0, 132, 255);
+    padding: 7px 5px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: small;
+    border-radius: 10px;
+}
+
+#update:hover {
+    background: rgb(1, 118, 228);
+}
+
+#delete {
+    background: rgba(241, 31, 31, 0.993);
+    padding: 7px 5px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: small;
+    border-radius: 10px;
+}
+
+#delete {
+    background: rgba(190, 22, 22, 0.993)
+}
+
+
+
+@media (min-width : 641px) and (max-width : 1220px) {
+
+    table {
+        width: 40%;
+    }
+
+    tr #action {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #seprator {
+        display: none
+    }
+
+    #action {
+        flex-direction: column;
+    }
+
+    #update {
+        margin-bottom: 3px;
+    }
+
+}
+
+@media (min-width : 0px) and (max-width : 640px) {
+    table {
+        font-size: 10px;
+    }
+
+    tr,
+    td {
+        padding: 6px 3px;
+        font-size: xx-small;
+    }
+
+    #action {
+        flex-direction: column;
+    }
+
+    #seprator {
+        display: none;
+    }
+
+    #update {
+        margin-bottom: 3px;
+    }
+
+    #update,
+    #delete {
+        padding: 5px 3px;
+        font-size: xx-small;
+    }
+}
